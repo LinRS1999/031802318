@@ -42,6 +42,7 @@ def write_result(output, file, test, flag):
             if file != test:
                 file_handle.write('发生异常！文本相似度计算失败！')
                 file_handle.close()
+                print(0)
                 raise SimIsOneError
         if flag == 0:
             file_handle.write('%.2f' %jaccard_similarity(file, test))
@@ -61,10 +62,12 @@ if __name__ == '__main__':
     if file == '':
         # 发生空文本异常
         write_result(output, file, test, 1)
+        print(0)
         raise NoWordError
     if test == '':
         # 发生空文本异常
         write_result(output, file, test, 1)
+        print(0)
         raise NoWordError
     # 符号表
     chars = ['\n', '\t', '，', '。', '；', '：', "？", '、', '！', '《', '》',
@@ -77,3 +80,4 @@ if __name__ == '__main__':
     for char in chars:
         test = test.replace(char, '')
     write_result(output, file, test, 0)
+    print(0)
