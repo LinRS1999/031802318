@@ -1,0 +1,6 @@
+jieba==0.42.1
+numpy==1.18.4
+gensim==3.8.3
+line_profiler==3.0.2
+memory_profiler==0.57.0
+scikit_learn==0.23.2
