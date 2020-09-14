@@ -1,2 +1,20 @@
-"# 031802318" 
-"# 031802318" 
+## 论文查重
+### 1.main.py
+- 执行请使用命令行参数，执行样例：
+- main.py E:\pycharm\code\ruangong\orig.txt E:\pycharm\code\ruangong\orig_0.8_add.txt E:\pycharm\code\ruangong\result.txt
+### 2.cosine.py
+- 为余弦相似度算法类
+### 3.jaccard.py
+- 为杰卡德相似度算法类
+### 4.line_test.py
+- 为line_profiler和memory_profiler的测试代码
+### 5.diy_excption.py
+- 为自定义异常代码
+### 6.sim_test.py
+- 为测试样例的单元测试函数
+### 7.unittest_sim.py
+- 为测试异常的单元测试函数
+### 8.hit_stopwords.txt
+- 为哈工大停用词表
+### 9.stopwords-master
+- 为停用词表文件
